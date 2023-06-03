@@ -1,0 +1,35 @@
+
+<div class="top-bar">
+
+  <p class="title">FACEBOOK LIKE APP</p>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="card formInserimento col-3">
+      <div class="card-body">
+        <div class="container text-center">
+        <div>
+          <b><label for="autore">AUTORE:</label><br></b>
+          <input class="insAutore" name="Autore" #newautore>
+        </div>
+        <div>
+          <b><label for="testo">TESTO:</label><br></b>
+          <input  class="insTesto" name="Testo" #newtesto>
+        </div>
+        
+        
+        <button href='#' (click)="addPost(newautore, newtesto)" class="btn btnInserimento btn-primary">
+          Inserisci nuovo post
+        </button>
+      </div>
+      </div>
+    </div>
+    <div class="col-9">
+      <div *ngFor="let p of postOrdinati()" >
+        <app-post  [post]="p" [comm]="CommSingoloPost(p.id)" ></app-post>
+      </div>
+    </div>
+  </div>
+</div>
