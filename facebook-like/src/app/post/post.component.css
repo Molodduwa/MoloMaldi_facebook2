@@ -13,12 +13,13 @@
     border-color: darkgreen;
     color:white;
 }
+
 .insAutore{
-    width:1000px; 
+    width:500px; 
     border-radius: 5px;
 }
 .insTesto{
-    width:1000px; 
+    width: 500px; 
     border-radius: 5px;
     height: 100px;
 }

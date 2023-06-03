@@ -41,6 +41,7 @@ export class PostComponent {
   visualCreaComment(): void {
     this.show = !this.show;
     this.show= true;
+    
   }
 
 }
